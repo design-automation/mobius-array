@@ -1,5 +1,5 @@
-import * as eval from "./eval";
-export {eval};
+import * as analyse from "./analyse";
+export {analyse};
 
 import * as modify from "./modify";
 export {modify};
