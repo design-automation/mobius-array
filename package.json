@@ -1,7 +1,7 @@
 {
     "name": "mobius-array",
     "license": "MIT",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "author": "Patrick Janssen",
     "description": "Mobius library that provides array functions",
     "homepage": "https://github.com/design-automation/mobius-array#readme",
@@ -22,8 +22,7 @@
         "type": "git",
         "url": "git+https://github.com/design-automation/mobius-array.git"
     },
-    "dependencies": {
-    },
+    "dependencies": {},
     "devDependencies": {
         "@types/jasmine": "^2.8.6",
         "@types/node": "^9.6.7",
