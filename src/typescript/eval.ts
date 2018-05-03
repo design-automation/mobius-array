@@ -41,10 +41,10 @@ export function indexOf(array: any[], value: any, search_all: boolean = true): n
     if (array === undefined) {throw new Error("Invalid arg: array must be defined.");}
     if (value === undefined) {throw new Error("Invalid arg: value must be defined.");}
     const positions = [];
-    for (let i = array.length - 1; i >= 0; i--) {
+    for (let i = 0 ; i < array.length; i++) {
         if (array[i] === value) {
             positions.push(i);
-            if (search_all === true) {
+            if (search_all === false) {
                 return i;
             }
         }

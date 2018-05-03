@@ -176,9 +176,9 @@ export function replaceValue(array: any[], value1: any, value2: any, replace_all
     if (value1 === undefined) {throw new Error("Invalid arg: value1 must be defined.");}
     if (value2 === undefined) {throw new Error("Invalid arg: value2 must be defined.");}
     const array2 = array.slice();
-    for (let i = array2.length - 1; i >= 0; i--) {
+    for (let i = 0 ; i < array2.length ; i++) {
         if (array2[i] === value1) {
-            array2[i] == value2;
+            array2[i] = value2;
             if (replace_all === false) {break;}
         }
     }

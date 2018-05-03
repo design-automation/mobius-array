@@ -4,7 +4,7 @@
     "version": "0.0.1",
     "author": "Patrick Janssen",
     "description": "Mobius library that provides array functions",
-    "homepage": "https://github.com/phtj/mobius-array#readme",
+    "homepage": "https://github.com/design-automation/mobius-array#readme",
     "types": "dist/index.d.ts",
     "main": "dist/index.js",
     "directories": {
@@ -20,7 +20,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/phtj/mobius-array.git"
+        "url": "git+https://github.com/design-automation/mobius-array.git"
     },
     "dependencies": {
     },
@@ -46,7 +46,7 @@
         "typescript": "^2.8.3"
     },
     "bugs": {
-        "url": "https://github.com/phtj/mobius-array/issues"
+        "url": "https://github.com/design-automation/mobius-array/issues"
     },
     "keywords": [
         "array"
