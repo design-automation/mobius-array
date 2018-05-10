@@ -98,7 +98,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phtj/mobius-array/blob/fbdf110/src/typescript/analyse.ts#L75">analyse.ts:75</a></li>
+									<li>Defined in <a href="https://github.com/design-automation/mobius-array/blob/7c75fe1/src/typescript/analyse.ts#L69">analyse.ts:69</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -107,6 +107,13 @@
 									Items must match both the value and type of specified value<br/></p>
 								</div>
 								<p>Returns false if no items in array match specified value.</p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>array = [6,2,2,7]
+										exists = Array.includes(array,2)</p>
+										<p>Expected value of exists is true.</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -125,11 +132,6 @@
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 							<p>Returns true if value can be foung in array, false if value cannot be found.</p>
-							<p><h3>Example: </h3>
-								<code>
-array = [6,2,2,7]<br/>
-exists = Array.includes(array,2)</code><br/><br/>
-							Expected value of exists is true.</p>
 						</li>
 					</ul>
 				</section>
@@ -143,7 +145,7 @@ exists = Array.includes(array,2)</code><br/><br/>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phtj/mobius-array/blob/fbdf110/src/typescript/analyse.ts#L40">analyse.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/design-automation/mobius-array/blob/7c75fe1/src/typescript/analyse.ts#L36">analyse.ts:36</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -152,6 +154,13 @@ exists = Array.includes(array,2)</code><br/><br/>
 									Items must match both the value and type of specified value<br/></p>
 								</div>
 								<p>Returns -1 if no items in array match specified value.</p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>array = [6,2,2,7]
+										positions = Array.indexOf(array,2,true)</p>
+										<p>Expected value of positions is [1,2].</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -180,11 +189,6 @@ exists = Array.includes(array,2)</code><br/><br/>
 								<span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>
 							</h4>
 							<p>Index position or array of index positions containing specified value.</p>
-							<p><h3>Example: </h3>
-								<code>
-array = [6,2,2,7]<br/>
-positions = Array.indexOf(array,2,true)</code><br/><br/>
-							Expected value of positions is [1,2].</p>
 						</li>
 					</ul>
 				</section>
@@ -198,13 +202,20 @@ positions = Array.indexOf(array,2,true)</code><br/><br/>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phtj/mobius-array/blob/fbdf110/src/typescript/analyse.ts#L17">analyse.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/design-automation/mobius-array/blob/7c75fe1/src/typescript/analyse.ts#L15">analyse.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Returns the number of items in an array.</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>array = [1,2,3]
+										len = Array.len(array)</p>
+										<p>Expected value of len is 3.</p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -217,11 +228,6 @@ positions = Array.indexOf(array,2,true)</code><br/><br/>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 							<p>Length of the array.</p>
-							<p><h3>Example: </h3>
-								<code>
-array = [1,2,3]<br/>
-len = Array.len(array)</code><br/><br/>
-							Expected value of len is 3.</p>
 						</li>
 					</ul>
 				</section>

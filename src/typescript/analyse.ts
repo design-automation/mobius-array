@@ -7,11 +7,9 @@
  *
  * @param array Array.
  * @returns Length of the array.
+ * @example array = [1,2,3]
+ * len = Array.len(array)
  *
- * <h3>Example: </h3>
- * <code>
- * array = [1,2,3]<br/>
- * len = Array.len(array)</code><br/><br/>
  * Expected value of len is 3.
  */
 export function len(array: any[]): number {
@@ -30,11 +28,9 @@ export function len(array: any[]): number {
  * @param search_all Returns index position for all instances of specified value if true, returns only the first
  *      instance if false.
  * @returns Index position or array of index positions containing specified value.
+ * @example array = [6,2,2,7]
+ * positions = Array.indexOf(array,2,true)
  *
- * <h3>Example: </h3>
- * <code>
- * array = [6,2,2,7]<br/>
- * positions = Array.indexOf(array,2,true)</code><br/><br/>
  * Expected value of positions is [1,2].
  */
 export function indexOf(array: any[], value: any, search_all: boolean = true): number|number[] {
@@ -65,11 +61,9 @@ export function indexOf(array: any[], value: any, search_all: boolean = true): n
  * @param array Array.
  * @param value Value to search for.
  * @returns Returns true if value can be foung in array, false if value cannot be found.
+ * @example array = [6,2,2,7]
+ * exists = Array.includes(array,2)
  *
- * <h3>Example: </h3>
- * <code>
- * array = [6,2,2,7]<br/>
- * exists = Array.includes(array,2)</code><br/><br/>
  * Expected value of exists is true.
  */
 export function includes(array: any[], value: any): boolean {

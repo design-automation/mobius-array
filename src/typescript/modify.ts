@@ -9,11 +9,9 @@
  * @param array Array to add to.
  * @param item Item to add.
  * @returns New array with added item.
- *
- * <h3>Example: </h3>
- * <code>
- * array = [1,2,3]<br/>
- * append = Array.append(array,4)</code><br/><br/>
+ * @example array = [1,2,3]
+ * append = Array.append(array,4)
+ * 
  * Expected value of array is [1,2,3,4].
  */
 export function append(array: any[], item: any): any[] {
@@ -31,11 +29,9 @@ export function append(array: any[], item: any): any[] {
  * @param array Array to add to.
  * @param item Item to add.
  * @returns New array with added item.
+ * @example array = [1,2,3]
+ * append = Array.appendFront(array,4)
  *
- * <h3>Example: </h3>
- * <code>
- * array = [1,2,3]<br/>
- * append = Array.appendFront(array,4)</code><br/><br/>
  * Expected value of array is [4,1,2,3].
  */
 export function appendFront(array: any[], item: any): any[] {
@@ -51,11 +47,9 @@ export function appendFront(array: any[], item: any): any[] {
  *
  * @param array Array to copy.
  * @returns New duplicated array.
- *array
- * <h3>Example:</h3>
- * <code>
- * array = [1,2,3]<br/>
- * copy = Array.Copy(array)</code><br/><br/>
+ * @example array = [1,2,3]
+ * copy = Array.Copy(array)
+ *
  * Expected value of copy is [1,2,3].
  */
 export function copy(array: any[]): any[] {
@@ -69,12 +63,10 @@ export function copy(array: any[]): any[] {
  * @param array1 First array.
  * @param array2 Second array.
  * @returns Combined array (array1 first, followed by array2).
+ * @example array1 = [1,2,3]
+ * array2 = [9,0]
+ * newarr = Array.concat(array1,array2)
  *
- * <h3>Example: </h3>
- * <code>
- * array1 = [1,2,3]<br/>
- * array2 = [9,0]<br/>
- * newarr = Array.concat(array1,array2)</code><br/><br/>
  * Expected value of newarr is [1,2,3,9,0].
  */
 export function concat(array1: any[], array2: any[]): any[] {
@@ -88,11 +80,9 @@ export function concat(array1: any[], array2: any[]): any[] {
  *
  * @param array Array to flatten.
  * @returns Flattened array.
+ * @example array = [1,2,3,[4,5]]
+ * flatten = Array.flatten(array)</code>
  *
- * <h3>Example: </h3>
- * <code>
- * array = [1,2,3,[4,5]]<br/>
- * flatten = Array.flatten(array)</code><br/><br/>
  * Expected value of array is [1,2,3,4,5].
  */
 export function flatten(array: any[]): any[] {
@@ -106,11 +96,9 @@ export function flatten(array: any[]): any[] {
  * @param array Array to remove item from.
  * @param index Zero-based index number of item to remove.
  * @returns Array with item removed.
+ * @example array = [1,2,3]
+ * remove = Array.removeIndex(array,1)
  *
- * <h3>Example: </h3>
- * <code>
- * array = [1,2,3]<br/>
- * remove = Array.removeIndex(array,1)</code><br/><br/>
  * Expected value of remove is [1,3].
  */
 export function removeIndex(array: any[], index: number): any[] {
@@ -132,11 +120,9 @@ export function removeIndex(array: any[], index: number): any[] {
  * @param remove_all Removes all instances of specified value if true, removes only the first instance if
  *      false.
  * @returns Array with item removed
+ * @example array = [1,2,2,3]
+ * remove = Array.removeValue(array,2,true)
  *
- * <h3>Example: </h3>
- * <code>
- * array = [1,2,2,3]<br/>
- * remove = Array.removeValue(array,2,true)</code><br/><br/>
  * Expected value of remove is [1,3].
  */
 export function removeValue(array: any[], value: any, remove_all: boolean = true): any[] {
@@ -164,11 +150,9 @@ export function removeValue(array: any[], value: any, remove_all: boolean = true
  * @param replace_all Replaces all instances of specified value if true, replaces only the first instance if
  *      false.
  * @returns Array with item(s) replaced.
+ * @example array = [1,2,2,3]
+ * replace = Array.replaceValue(array,2,9,true)
  *
- * <h3>Example: </h3>
- * <code>
- * array = [1,2,2,3]<br/>
- * replace = Array.replaceValue(array,2,9,true)</code><br/><br/>
  * Expected value of replace is [1,9,9,3].
  */
 export function replaceValue(array: any[], value1: any, value2: any, replace_all: boolean = true): any[] {
@@ -190,11 +174,9 @@ export function replaceValue(array: any[], value1: any, value2: any, replace_all
  *
  * @param array Array to reverse.
  * @returns New reversed array.
+ * @example array = [1,2,3]
+ * result = Array.reverse(array)
  *
- * <h3>Example: </h3>
- * <code>
- * array = [1,2,3]<br/>
- * result = Array.reverse(array)</code><br/><br/>
  * Expected value of result is [3,2,1].
  */
 export function reverse(array: any[]): any[] {
@@ -213,11 +195,9 @@ export function reverse(array: any[]): any[] {
  *
  * @param array Array to sort.
  * @returns New sorted array.
+ * @example array = ["1","2","10","Orange","apple"]
+ * sort = Array.sortAlpha(array)
  *
- * <h3>Example: </h3>
- * <code>
- * array = ["1","2","10","Orange","apple"]<br/>
- * sort = Array.sortAlpha(array)</code><br/><br/>
  * Expected value of array is ["1","10","2","Orange","apple"].
  */
 export function sortAlpha(array: any[]): any[] {
@@ -233,11 +213,9 @@ export function sortAlpha(array: any[]): any[] {
  *
  * @param array Array to add to.
  * @returns New sorted array.
+ * @example array = [56,6,48]
+ * sort = Array.sortNum(array)
  *
- * <h3>Example: </h3>
- * <code>
- * array = [56,6,48]<br/>
- * sort = Array.sortNum(array)</code><br/><br/>
  * Expected value of array is [6,48,56].
  */
 export function sortNum(array: any[]): any[] {
@@ -258,11 +236,9 @@ export function sortNum(array: any[]): any[] {
  *      A negative index can be used, indicating an offset from the end of the sequence.
  *      If end is undefined, slice extracts through the end of the sequence.
  * @returns A new array.
+ * @example array = [1,2,3,4,5]
+ * result = Array.slice(array,1,3)
  *
- * <h3>Example: </h3>
- * <code>
- * array = [1,2,3,4,5]<br/>
- * result = Array.slice(array,1,3)</code><br/><br/>
  * Expected value of result is [2,3].
  */
 export function slice(array: any[], start: number, end: number): any[] {
@@ -284,11 +260,9 @@ export function slice(array: any[], start: number, end: number): any[] {
  * @param num_to_remove Number of items to remove.
  * @param items_to_add Array of items to add.
  * @returns A new array.
+ * @example array = [10, 20, 30, 40, 50]
+ * result = Array.splice(array, 1, 3, [2.2, 3.3])
  *
- * <h3>Example: </h3>
- * <code>
- * array = [10, 20, 30, 40, 50]<br/>
- * result = Array.splice(array, 1, 3, [2.2, 3.3])</code><br/><br/>
  * Expected value of result is [10, 2.2, 3.2, 50].
  */
 export function splice(array: any[], index: number, num_to_remove: number, items_to_add: any[]): any[] {
@@ -306,10 +280,8 @@ export function splice(array: any[], index: number, num_to_remove: number, items
  * @param min Lower bound integer.
  * @param max Upper bound integer.
  * @returns New array.
+ * @example array = Array.range(0,5)
  *
- * <h3>Example: </h3>
- * <code>
- * array = Array.range(0,5)</code><br/><br/>
  * Expected value of array is [0,1,2,3,4].
  */
 export function range(min: number, max: number): number[] {

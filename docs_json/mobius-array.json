@@ -12,7 +12,7 @@
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "D:/Dropbox/Files/Software/GitHub/design-automation/mobius-array/src/typescript/_export.ts",
+			"originalName": "C:/Users/a0115775/Desktop/Cesium Functions/mobius-array/src/typescript/_export.ts",
 			"sources": [
 				{
 					"fileName": "_export.ts",
@@ -29,7 +29,7 @@
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "D:/Dropbox/Files/Software/GitHub/design-automation/mobius-array/src/typescript/analyse.ts",
+			"originalName": "C:/Users/a0115775/Desktop/Cesium Functions/mobius-array/src/typescript/analyse.ts",
 			"comment": {
 				"shortText": "Array functions that obtain and return information from an input array. Does not modify input array."
 			},
@@ -52,7 +52,13 @@
 							"comment": {
 								"shortText": "Searches for a value in an array and returns true if found.\nItems must match both the value and type of specified value<br/>",
 								"text": "Returns false if no items in array match specified value.\n",
-								"returns": "Returns true if value can be foung in array, false if value cannot be found.\n\n<h3>Example: </h3>\n<code>\narray = [6,2,2,7]<br/>\nexists = Array.includes(array,2)</code><br/><br/>\nExpected value of exists is true.\n"
+								"returns": "Returns true if value can be foung in array, false if value cannot be found.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "array = [6,2,2,7]\nexists = Array.includes(array,2)\n\nExpected value of exists is true.\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -96,7 +102,7 @@
 					"sources": [
 						{
 							"fileName": "analyse.ts",
-							"line": 75,
+							"line": 69,
 							"character": 24
 						}
 					]
@@ -119,7 +125,13 @@
 							"comment": {
 								"shortText": "Searches for a value in an array and returns the index position if found.\nItems must match both the value and type of specified value<br/>",
 								"text": "Returns -1 if no items in array match specified value.\n",
-								"returns": "Index position or array of index positions containing specified value.\n\n<h3>Example: </h3>\n<code>\narray = [6,2,2,7]<br/>\npositions = Array.indexOf(array,2,true)</code><br/><br/>\nExpected value of positions is [1,2].\n"
+								"returns": "Index position or array of index positions containing specified value.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "array = [6,2,2,7]\npositions = Array.indexOf(array,2,true)\n\nExpected value of positions is [1,2].\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -190,7 +202,7 @@
 					"sources": [
 						{
 							"fileName": "analyse.ts",
-							"line": 40,
+							"line": 36,
 							"character": 23
 						}
 					]
@@ -212,7 +224,13 @@
 							"flags": {},
 							"comment": {
 								"shortText": "Returns the number of items in an array.",
-								"returns": "Length of the array.\n\n<h3>Example: </h3>\n<code>\narray = [1,2,3]<br/>\nlen = Array.len(array)</code><br/><br/>\nExpected value of len is 3.\n"
+								"returns": "Length of the array.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "array = [1,2,3]\nlen = Array.len(array)\n\nExpected value of len is 3.\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -242,7 +260,7 @@
 					"sources": [
 						{
 							"fileName": "analyse.ts",
-							"line": 17,
+							"line": 15,
 							"character": 19
 						}
 					]
@@ -275,7 +293,7 @@
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "D:/Dropbox/Files/Software/GitHub/design-automation/mobius-array/src/typescript/modify.ts",
+			"originalName": "C:/Users/a0115775/Desktop/Cesium Functions/mobius-array/src/typescript/modify.ts",
 			"comment": {
 				"shortText": "Array functions that modify an input array and return a new array."
 			},
@@ -297,7 +315,13 @@
 							"flags": {},
 							"comment": {
 								"shortText": "Adds one item to the end of an array and returns a new array.\nIf item is an array, the entire array will be appended as one item.",
-								"returns": "New array with added item.\n\n<h3>Example: </h3>\n<code>\narray = [1,2,3]<br/>\nappend = Array.append(array,4)</code><br/><br/>\nExpected value of array is [1,2,3,4].\n"
+								"returns": "New array with added item.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "array = [1,2,3]\nappend = Array.append(array,4)\n\nExpected value of array is [1,2,3,4].\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -344,7 +368,7 @@
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 19,
+							"line": 17,
 							"character": 22
 						}
 					]
@@ -366,7 +390,13 @@
 							"flags": {},
 							"comment": {
 								"shortText": "Adds one item to the front of an array and returns a new array.\nIf the item is an array, the entire array will be appended as one item.",
-								"returns": "New array with added item.\n\n<h3>Example: </h3>\n<code>\narray = [1,2,3]<br/>\nappend = Array.appendFront(array,4)</code><br/><br/>\nExpected value of array is [4,1,2,3].\n"
+								"returns": "New array with added item.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "array = [1,2,3]\nappend = Array.appendFront(array,4)\n\nExpected value of array is [4,1,2,3].\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -413,7 +443,7 @@
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 41,
+							"line": 37,
 							"character": 27
 						}
 					]
@@ -435,7 +465,13 @@
 							"flags": {},
 							"comment": {
 								"shortText": "Combines two arrays into a new array.",
-								"returns": "Combined array (array1 first, followed by array2).\n\n<h3>Example: </h3>\n<code>\narray1 = [1,2,3]<br/>\narray2 = [9,0]<br/>\nnewarr = Array.concat(array1,array2)</code><br/><br/>\nExpected value of newarr is [1,2,3,9,0].\n"
+								"returns": "Combined array (array1 first, followed by array2).",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "array1 = [1,2,3]\narray2 = [9,0]\nnewarr = Array.concat(array1,array2)\n\nExpected value of newarr is [1,2,3,9,0].\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -485,7 +521,7 @@
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 80,
+							"line": 72,
 							"character": 22
 						}
 					]
@@ -507,7 +543,13 @@
 							"flags": {},
 							"comment": {
 								"shortText": "Creates a new array by making a copy of an existing array.",
-								"returns": "New duplicated array.\narray\n<h3>Example:</h3>\n<code>\narray = [1,2,3]<br/>\ncopy = Array.Copy(array)</code><br/><br/>\nExpected value of copy is [1,2,3].\n"
+								"returns": "New duplicated array.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "array = [1,2,3]\ncopy = Array.Copy(array)\n\nExpected value of copy is [1,2,3].\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -540,7 +582,7 @@
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 61,
+							"line": 55,
 							"character": 20
 						}
 					]
@@ -562,7 +604,13 @@
 							"flags": {},
 							"comment": {
 								"shortText": "Flattens an n-dimensional array into a one-dimensional array.",
-								"returns": "Flattened array.\n\n<h3>Example: </h3>\n<code>\narray = [1,2,3,[4,5]]<br/>\nflatten = Array.flatten(array)</code><br/><br/>\nExpected value of array is [1,2,3,4,5].\n"
+								"returns": "Flattened array.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "array = [1,2,3,[4,5]]\nflatten = Array.flatten(array)</code>\n\nExpected value of array is [1,2,3,4,5].\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -595,7 +643,7 @@
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 98,
+							"line": 88,
 							"character": 23
 						}
 					]
@@ -644,7 +692,7 @@
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 328,
+							"line": 300,
 							"character": 20
 						}
 					]
@@ -666,7 +714,13 @@
 							"flags": {},
 							"comment": {
 								"shortText": "Creates a new array of integer numbers between two bounds.\nLower bound is inclusive and upper bound is exclusive.",
-								"returns": "New array.\n\n<h3>Example: </h3>\n<code>\narray = Array.range(0,5)</code><br/><br/>\nExpected value of array is [0,1,2,3,4].\n"
+								"returns": "New array.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "array = Array.range(0,5)\n\nExpected value of array is [0,1,2,3,4].\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -710,7 +764,7 @@
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 315,
+							"line": 287,
 							"character": 21
 						}
 					]
@@ -732,7 +786,13 @@
 							"flags": {},
 							"comment": {
 								"shortText": "Removes the item at the specified index from an array and returns a new array.",
-								"returns": "Array with item removed.\n\n<h3>Example: </h3>\n<code>\narray = [1,2,3]<br/>\nremove = Array.removeIndex(array,1)</code><br/><br/>\nExpected value of remove is [1,3].\n"
+								"returns": "Array with item removed.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "array = [1,2,3]\nremove = Array.removeIndex(array,1)\n\nExpected value of remove is [1,3].\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -779,7 +839,7 @@
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 116,
+							"line": 104,
 							"character": 27
 						}
 					]
@@ -802,7 +862,13 @@
 							"comment": {
 								"shortText": "Removes items that match specified value from an array and returns a new array.\nItems must match both the value and type of specified value<br/>",
 								"text": "Returns original array if no items in array match specified value.\n",
-								"returns": "Array with item removed\n\n<h3>Example: </h3>\n<code>\narray = [1,2,2,3]<br/>\nremove = Array.removeValue(array,2,true)</code><br/><br/>\nExpected value of remove is [1,3].\n"
+								"returns": "Array with item removed",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "array = [1,2,2,3]\nremove = Array.removeValue(array,2,true)\n\nExpected value of remove is [1,3].\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -864,7 +930,7 @@
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 142,
+							"line": 128,
 							"character": 27
 						}
 					]
@@ -887,7 +953,13 @@
 							"comment": {
 								"shortText": "Replaces items that match specified value from an array with a new value and returns a new array.\nItems must match both the value and type of specified value<br/>",
 								"text": "Returns original array if no items in array match specified value.\n",
-								"returns": "Array with item(s) replaced.\n\n<h3>Example: </h3>\n<code>\narray = [1,2,2,3]<br/>\nreplace = Array.replaceValue(array,2,9,true)</code><br/><br/>\nExpected value of replace is [1,9,9,3].\n"
+								"returns": "Array with item(s) replaced.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "array = [1,2,2,3]\nreplace = Array.replaceValue(array,2,9,true)\n\nExpected value of replace is [1,9,9,3].\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -960,7 +1032,7 @@
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 174,
+							"line": 158,
 							"character": 28
 						}
 					]
@@ -982,7 +1054,13 @@
 							"flags": {},
 							"comment": {
 								"shortText": "Reverses the order of items in an array and returns a new array.",
-								"returns": "New reversed array.\n\n<h3>Example: </h3>\n<code>\narray = [1,2,3]<br/>\nresult = Array.reverse(array)</code><br/><br/>\nExpected value of result is [3,2,1].\n"
+								"returns": "New reversed array.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "array = [1,2,3]\nresult = Array.reverse(array)\n\nExpected value of result is [3,2,1].\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -1015,7 +1093,7 @@
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 200,
+							"line": 182,
 							"character": 23
 						}
 					]
@@ -1037,7 +1115,13 @@
 							"flags": {},
 							"comment": {
 								"shortText": "Creates a copy of a portion of an array, from start index to end index (end not included).",
-								"returns": "A new array.\n\n<h3>Example: </h3>\n<code>\narray = [1,2,3,4,5]<br/>\nresult = Array.slice(array,1,3)</code><br/><br/>\nExpected value of result is [2,3].\n"
+								"returns": "A new array.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "array = [1,2,3,4,5]\nresult = Array.slice(array,1,3)\n\nExpected value of result is [2,3].\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -1098,7 +1182,7 @@
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 268,
+							"line": 244,
 							"character": 21
 						}
 					]
@@ -1121,7 +1205,13 @@
 							"comment": {
 								"shortText": "Sorts an array of strings alphabetically and returns a new array.\nIf items are not strings, they are treated as strings.<br/>",
 								"text": "Items are sorted according to string Unicode code points (character by character, numbers before upper case\nalphabets, upper case alphabets before lower case alphabets)\n",
-								"returns": "New sorted array.\n\n<h3>Example: </h3>\n<code>\narray = [\"1\",\"2\",\"10\",\"Orange\",\"apple\"]<br/>\nsort = Array.sortAlpha(array)</code><br/><br/>\nExpected value of array is [\"1\",\"10\",\"2\",\"Orange\",\"apple\"].\n"
+								"returns": "New sorted array.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "array = [\"1\",\"2\",\"10\",\"Orange\",\"apple\"]\nsort = Array.sortAlpha(array)\n\nExpected value of array is [\"1\",\"10\",\"2\",\"Orange\",\"apple\"].\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -1154,7 +1244,7 @@
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 223,
+							"line": 203,
 							"character": 25
 						}
 					]
@@ -1176,7 +1266,13 @@
 							"flags": {},
 							"comment": {
 								"shortText": "Sorts an array of numbers in ascending order and returns a new array.\nThe array must contain numbers.",
-								"returns": "New sorted array.\n\n<h3>Example: </h3>\n<code>\narray = [56,6,48]<br/>\nsort = Array.sortNum(array)</code><br/><br/>\nExpected value of array is [6,48,56].\n"
+								"returns": "New sorted array.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "array = [56,6,48]\nsort = Array.sortNum(array)\n\nExpected value of array is [6,48,56].\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -1209,7 +1305,7 @@
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 243,
+							"line": 221,
 							"character": 23
 						}
 					]
@@ -1232,7 +1328,13 @@
 							"comment": {
 								"shortText": "Adds and/or removes items to/from an array and returns a new array.",
 								"text": "If no items_to_add are specified, then items are only removed.\nIf num_to_remove is 0, then items are only added.<br/>\n",
-								"returns": "A new array.\n\n<h3>Example: </h3>\n<code>\narray = [10, 20, 30, 40, 50]<br/>\nresult = Array.splice(array, 1, 3, [2.2, 3.3])</code><br/><br/>\nExpected value of result is [10, 2.2, 3.2, 50].\n"
+								"returns": "A new array.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "array = [10, 20, 30, 40, 50]\nresult = Array.splice(array, 1, 3, [2.2, 3.3])\n\nExpected value of result is [10, 2.2, 3.2, 50].\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -1310,7 +1412,7 @@
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 294,
+							"line": 268,
 							"character": 22
 						}
 					]
