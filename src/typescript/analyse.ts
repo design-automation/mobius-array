@@ -2,20 +2,20 @@
  * Array functions that obtain and return information from an input array. Does not modify input array.
  */
 
-/**
- * Returns the number of items in an array.
- *
- * @param array Array.
- * @returns Length of the array.
- * @example array = [1,2,3]
- * len = Array.len(array)
- *
- * Expected value of len is 3.
- */
-export function len(array: any[]): number {
-    if (array === undefined) {throw new Error("Invalid arg: array must be defined.");}
-    return array.length;
-}
+// /**
+//  * Returns the number of items in an array.
+//  *
+//  * @param array Array.
+//  * @returns Length of the array.
+//  * @example array = [1,2,3]
+//  * len = Array.len(array)
+//  *
+//  * Expected value of len is 3.
+//  */
+// export function len(array: any[]): number {
+//     if (array === undefined) {throw new Error("Invalid arg: array must be defined.");}
+//     return array.length;
+// }
 
 /**
  * Searches for a value in an array and returns the index position if found.

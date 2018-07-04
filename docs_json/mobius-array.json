@@ -5,14 +5,14 @@
 	"flags": {},
 	"children": [
 		{
-			"id": 75,
+			"id": 72,
 			"name": "\"_export\"",
 			"kind": 1,
 			"kindString": "External module",
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "C:/Users/a0115775/Desktop/Cesium Functions/mobius-array/src/typescript/_export.ts",
+			"originalName": "D:/StudentResearch/Mobius/mobius_functions/mobius-array/src/typescript/_export.ts",
 			"sources": [
 				{
 					"fileName": "_export.ts",
@@ -29,13 +29,13 @@
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "C:/Users/a0115775/Desktop/Cesium Functions/mobius-array/src/typescript/analyse.ts",
+			"originalName": "D:/StudentResearch/Mobius/mobius_functions/mobius-array/src/typescript/analyse.ts",
 			"comment": {
 				"shortText": "Array functions that obtain and return information from an input array. Does not modify input array."
 			},
 			"children": [
 				{
-					"id": 10,
+					"id": 7,
 					"name": "includes",
 					"kind": 64,
 					"kindString": "Function",
@@ -44,7 +44,7 @@
 					},
 					"signatures": [
 						{
-							"id": 11,
+							"id": 8,
 							"name": "includes",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -62,7 +62,7 @@
 							},
 							"parameters": [
 								{
-									"id": 12,
+									"id": 9,
 									"name": "array",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -79,7 +79,7 @@
 									}
 								},
 								{
-									"id": 13,
+									"id": 10,
 									"name": "value",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -108,7 +108,7 @@
 					]
 				},
 				{
-					"id": 5,
+					"id": 2,
 					"name": "indexOf",
 					"kind": 64,
 					"kindString": "Function",
@@ -117,7 +117,7 @@
 					},
 					"signatures": [
 						{
-							"id": 6,
+							"id": 3,
 							"name": "indexOf",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -135,7 +135,7 @@
 							},
 							"parameters": [
 								{
-									"id": 7,
+									"id": 4,
 									"name": "array",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -152,7 +152,7 @@
 									}
 								},
 								{
-									"id": 8,
+									"id": 5,
 									"name": "value",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -166,7 +166,7 @@
 									}
 								},
 								{
-									"id": 9,
+									"id": 6,
 									"name": "search_all",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -206,64 +206,6 @@
 							"character": 23
 						}
 					]
-				},
-				{
-					"id": 2,
-					"name": "len",
-					"kind": 64,
-					"kindString": "Function",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 3,
-							"name": "len",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"comment": {
-								"shortText": "Returns the number of items in an array.",
-								"returns": "Length of the array.",
-								"tags": [
-									{
-										"tag": "example",
-										"text": "array = [1,2,3]\nlen = Array.len(array)\n\nExpected value of len is 3.\n"
-									}
-								]
-							},
-							"parameters": [
-								{
-									"id": 4,
-									"name": "array",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"text": "Array."
-									},
-									"type": {
-										"type": "array",
-										"elementType": {
-											"type": "intrinsic",
-											"name": "any"
-										}
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "number"
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "analyse.ts",
-							"line": 15,
-							"character": 19
-						}
-					]
 				}
 			],
 			"groups": [
@@ -271,8 +213,7 @@
 					"title": "Functions",
 					"kind": 64,
 					"children": [
-						10,
-						5,
+						7,
 						2
 					]
 				}
@@ -286,20 +227,20 @@
 			]
 		},
 		{
-			"id": 14,
+			"id": 11,
 			"name": "\"modify\"",
 			"kind": 1,
 			"kindString": "External module",
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "C:/Users/a0115775/Desktop/Cesium Functions/mobius-array/src/typescript/modify.ts",
+			"originalName": "D:/StudentResearch/Mobius/mobius_functions/mobius-array/src/typescript/modify.ts",
 			"comment": {
 				"shortText": "Array functions that modify an input array and return a new array."
 			},
 			"children": [
 				{
-					"id": 15,
+					"id": 12,
 					"name": "append",
 					"kind": 64,
 					"kindString": "Function",
@@ -308,7 +249,7 @@
 					},
 					"signatures": [
 						{
-							"id": 16,
+							"id": 13,
 							"name": "append",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -325,7 +266,7 @@
 							},
 							"parameters": [
 								{
-									"id": 17,
+									"id": 14,
 									"name": "array",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -342,7 +283,7 @@
 									}
 								},
 								{
-									"id": 18,
+									"id": 15,
 									"name": "item",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -374,7 +315,7 @@
 					]
 				},
 				{
-					"id": 19,
+					"id": 16,
 					"name": "appendFront",
 					"kind": 64,
 					"kindString": "Function",
@@ -383,7 +324,7 @@
 					},
 					"signatures": [
 						{
-							"id": 20,
+							"id": 17,
 							"name": "appendFront",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -400,7 +341,7 @@
 							},
 							"parameters": [
 								{
-									"id": 21,
+									"id": 18,
 									"name": "array",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -417,7 +358,7 @@
 									}
 								},
 								{
-									"id": 22,
+									"id": 19,
 									"name": "item",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -449,7 +390,7 @@
 					]
 				},
 				{
-					"id": 26,
+					"id": 23,
 					"name": "concat",
 					"kind": 64,
 					"kindString": "Function",
@@ -458,7 +399,7 @@
 					},
 					"signatures": [
 						{
-							"id": 27,
+							"id": 24,
 							"name": "concat",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -475,7 +416,7 @@
 							},
 							"parameters": [
 								{
-									"id": 28,
+									"id": 25,
 									"name": "array1",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -492,7 +433,7 @@
 									}
 								},
 								{
-									"id": 29,
+									"id": 26,
 									"name": "array2",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -527,7 +468,7 @@
 					]
 				},
 				{
-					"id": 23,
+					"id": 20,
 					"name": "copy",
 					"kind": 64,
 					"kindString": "Function",
@@ -536,7 +477,7 @@
 					},
 					"signatures": [
 						{
-							"id": 24,
+							"id": 21,
 							"name": "copy",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -553,7 +494,7 @@
 							},
 							"parameters": [
 								{
-									"id": 25,
+									"id": 22,
 									"name": "array",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -588,7 +529,7 @@
 					]
 				},
 				{
-					"id": 30,
+					"id": 27,
 					"name": "flatten",
 					"kind": 64,
 					"kindString": "Function",
@@ -597,7 +538,7 @@
 					},
 					"signatures": [
 						{
-							"id": 31,
+							"id": 28,
 							"name": "flatten",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -614,7 +555,7 @@
 							},
 							"parameters": [
 								{
-									"id": 32,
+									"id": 29,
 									"name": "array",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -649,14 +590,14 @@
 					]
 				},
 				{
-					"id": 72,
+					"id": 69,
 					"name": "flattenDeep",
 					"kind": 64,
 					"kindString": "Function",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 73,
+							"id": 70,
 							"name": "flattenDeep",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -666,7 +607,7 @@
 							},
 							"parameters": [
 								{
-									"id": 74,
+									"id": 71,
 									"name": "array",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -698,7 +639,7 @@
 					]
 				},
 				{
-					"id": 68,
+					"id": 65,
 					"name": "range",
 					"kind": 64,
 					"kindString": "Function",
@@ -707,7 +648,7 @@
 					},
 					"signatures": [
 						{
-							"id": 69,
+							"id": 66,
 							"name": "range",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -724,7 +665,7 @@
 							},
 							"parameters": [
 								{
-									"id": 70,
+									"id": 67,
 									"name": "min",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -738,7 +679,7 @@
 									}
 								},
 								{
-									"id": 71,
+									"id": 68,
 									"name": "max",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -770,7 +711,7 @@
 					]
 				},
 				{
-					"id": 33,
+					"id": 30,
 					"name": "removeIndex",
 					"kind": 64,
 					"kindString": "Function",
@@ -779,7 +720,7 @@
 					},
 					"signatures": [
 						{
-							"id": 34,
+							"id": 31,
 							"name": "removeIndex",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -796,7 +737,7 @@
 							},
 							"parameters": [
 								{
-									"id": 35,
+									"id": 32,
 									"name": "array",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -813,7 +754,7 @@
 									}
 								},
 								{
-									"id": 36,
+									"id": 33,
 									"name": "index",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -845,7 +786,7 @@
 					]
 				},
 				{
-					"id": 37,
+					"id": 34,
 					"name": "removeValue",
 					"kind": 64,
 					"kindString": "Function",
@@ -854,7 +795,7 @@
 					},
 					"signatures": [
 						{
-							"id": 38,
+							"id": 35,
 							"name": "removeValue",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -872,7 +813,7 @@
 							},
 							"parameters": [
 								{
-									"id": 39,
+									"id": 36,
 									"name": "array",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -889,7 +830,7 @@
 									}
 								},
 								{
-									"id": 40,
+									"id": 37,
 									"name": "value",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -903,7 +844,7 @@
 									}
 								},
 								{
-									"id": 41,
+									"id": 38,
 									"name": "remove_all",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -936,7 +877,7 @@
 					]
 				},
 				{
-					"id": 42,
+					"id": 39,
 					"name": "replaceValue",
 					"kind": 64,
 					"kindString": "Function",
@@ -945,7 +886,7 @@
 					},
 					"signatures": [
 						{
-							"id": 43,
+							"id": 40,
 							"name": "replaceValue",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -963,7 +904,7 @@
 							},
 							"parameters": [
 								{
-									"id": 44,
+									"id": 41,
 									"name": "array",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -980,7 +921,7 @@
 									}
 								},
 								{
-									"id": 45,
+									"id": 42,
 									"name": "value1",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -991,7 +932,7 @@
 									}
 								},
 								{
-									"id": 46,
+									"id": 43,
 									"name": "value2",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1005,7 +946,7 @@
 									}
 								},
 								{
-									"id": 47,
+									"id": 44,
 									"name": "replace_all",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1038,7 +979,7 @@
 					]
 				},
 				{
-					"id": 48,
+					"id": 45,
 					"name": "reverse",
 					"kind": 64,
 					"kindString": "Function",
@@ -1047,7 +988,7 @@
 					},
 					"signatures": [
 						{
-							"id": 49,
+							"id": 46,
 							"name": "reverse",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -1064,7 +1005,7 @@
 							},
 							"parameters": [
 								{
-									"id": 50,
+									"id": 47,
 									"name": "array",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1099,7 +1040,7 @@
 					]
 				},
 				{
-					"id": 57,
+					"id": 54,
 					"name": "slice",
 					"kind": 64,
 					"kindString": "Function",
@@ -1108,7 +1049,7 @@
 					},
 					"signatures": [
 						{
-							"id": 58,
+							"id": 55,
 							"name": "slice",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -1125,7 +1066,7 @@
 							},
 							"parameters": [
 								{
-									"id": 59,
+									"id": 56,
 									"name": "array",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1142,7 +1083,7 @@
 									}
 								},
 								{
-									"id": 60,
+									"id": 57,
 									"name": "start",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1156,7 +1097,7 @@
 									}
 								},
 								{
-									"id": 61,
+									"id": 58,
 									"name": "end",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1188,7 +1129,7 @@
 					]
 				},
 				{
-					"id": 51,
+					"id": 48,
 					"name": "sortAlpha",
 					"kind": 64,
 					"kindString": "Function",
@@ -1197,7 +1138,7 @@
 					},
 					"signatures": [
 						{
-							"id": 52,
+							"id": 49,
 							"name": "sortAlpha",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -1215,7 +1156,7 @@
 							},
 							"parameters": [
 								{
-									"id": 53,
+									"id": 50,
 									"name": "array",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1250,7 +1191,7 @@
 					]
 				},
 				{
-					"id": 54,
+					"id": 51,
 					"name": "sortNum",
 					"kind": 64,
 					"kindString": "Function",
@@ -1259,7 +1200,7 @@
 					},
 					"signatures": [
 						{
-							"id": 55,
+							"id": 52,
 							"name": "sortNum",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -1276,7 +1217,7 @@
 							},
 							"parameters": [
 								{
-									"id": 56,
+									"id": 53,
 									"name": "array",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1311,7 +1252,7 @@
 					]
 				},
 				{
-					"id": 62,
+					"id": 59,
 					"name": "splice",
 					"kind": 64,
 					"kindString": "Function",
@@ -1320,7 +1261,7 @@
 					},
 					"signatures": [
 						{
-							"id": 63,
+							"id": 60,
 							"name": "splice",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -1338,7 +1279,7 @@
 							},
 							"parameters": [
 								{
-									"id": 64,
+									"id": 61,
 									"name": "array",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1355,7 +1296,7 @@
 									}
 								},
 								{
-									"id": 65,
+									"id": 62,
 									"name": "index",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1369,7 +1310,7 @@
 									}
 								},
 								{
-									"id": 66,
+									"id": 63,
 									"name": "num_to_remove",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1383,7 +1324,7 @@
 									}
 								},
 								{
-									"id": 67,
+									"id": 64,
 									"name": "items_to_add",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1423,21 +1364,21 @@
 					"title": "Functions",
 					"kind": 64,
 					"children": [
-						15,
-						19,
-						26,
+						12,
+						16,
 						23,
+						20,
+						27,
+						69,
+						65,
 						30,
-						72,
-						68,
-						33,
-						37,
-						42,
-						48,
-						57,
-						51,
+						34,
+						39,
+						45,
 						54,
-						62
+						48,
+						51,
+						59
 					]
 				}
 			],
@@ -1455,9 +1396,9 @@
 			"title": "External modules",
 			"kind": 1,
 			"children": [
-				75,
+				72,
 				1,
-				14
+				11
 			]
 		}
 	]
