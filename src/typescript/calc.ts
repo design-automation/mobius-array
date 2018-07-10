@@ -76,3 +76,22 @@ export function includes(array: any[], value: any): boolean {
     }
     return false;
 }
+
+/**
+ * Sums up all the values in an array.
+ *
+ * @param array Array of numbers.
+ * @returns Number
+ * @example array = [1,2,3]
+ * sum = Array.massAdd(array)
+ *
+ * Expected value of sum is 6.
+ */
+export function massAdd(array: number[]): number {
+    if (array === undefined) {throw new Error("Invalid arg: array must be defined.");}
+    let sum: number = 0;
+    for (let i = array.length - 1; i >= 0; i--) {
+        sum += array[i];
+    }
+    return sum;
+}

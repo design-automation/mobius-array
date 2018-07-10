@@ -1,5 +1,5 @@
-import * as analyse from "./analyse";
-export {analyse};
+import * as calc from "./calc";
+export {calc};
 
 import * as modify from "./modify";
 export {modify};
