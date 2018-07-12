@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;analyse&quot; | mobius-array</title>
+	<title>&quot;calc&quot; | mobius-array</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,10 +54,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_analyse_.html">&quot;analyse&quot;</a>
+					<a href="_calc_.html">&quot;calc&quot;</a>
 				</li>
 			</ul>
-			<h1>External module &quot;analyse&quot;</h1>
+			<h1>External module &quot;calc&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -78,8 +78,9 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_analyse_.html#includes" class="tsd-kind-icon">includes</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_analyse_.html#indexof" class="tsd-kind-icon">index<wbr>Of</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_calc_.html#includes" class="tsd-kind-icon">includes</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_calc_.html#indexof" class="tsd-kind-icon">index<wbr>Of</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_calc_.html#massadd" class="tsd-kind-icon">mass<wbr>Add</a></li>
 							</ul>
 						</section>
 					</div>
@@ -97,7 +98,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/design-automation/mobius-array/blob/5402c68/src/typescript/analyse.ts#L69">analyse.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/design-automation/mobius-array/blob/ee87f13/src/typescript/calc.ts#L69">calc.ts:69</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -144,7 +145,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/design-automation/mobius-array/blob/5402c68/src/typescript/analyse.ts#L36">analyse.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/design-automation/mobius-array/blob/ee87f13/src/typescript/calc.ts#L36">calc.ts:36</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -191,6 +192,45 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="massadd" class="tsd-anchor"></a>
+					<h3>mass<wbr>Add</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">mass<wbr>Add<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/design-automation/mobius-array/blob/ee87f13/src/typescript/calc.ts#L90">calc.ts:90</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sums up all the values in an array.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p>array = [1,2,3]
+										sum = Array.massAdd(array)</p>
+										<p>Expected value of sum is 6.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>array: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Array of numbers.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>Number</p>
+						</li>
+					</ul>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -203,7 +243,10 @@
 						<a href="__export_.html">"_<wbr>export"</a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="_analyse_.html">"analyse"</a>
+						<a href="_calc_.html">"calc"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_create_.html">"create"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_modify_.html">"modify"</a>
@@ -213,10 +256,13 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_analyse_.html#includes" class="tsd-kind-icon">includes</a>
+						<a href="_calc_.html#includes" class="tsd-kind-icon">includes</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_analyse_.html#indexof" class="tsd-kind-icon">index<wbr>Of</a>
+						<a href="_calc_.html#indexof" class="tsd-kind-icon">index<wbr>Of</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_calc_.html#massadd" class="tsd-kind-icon">mass<wbr>Add</a>
 					</li>
 				</ul>
 			</nav>

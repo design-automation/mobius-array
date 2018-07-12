@@ -5,7 +5,7 @@
 	"flags": {},
 	"children": [
 		{
-			"id": 72,
+			"id": 76,
 			"name": "\"_export\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -23,13 +23,13 @@
 		},
 		{
 			"id": 1,
-			"name": "\"analyse\"",
+			"name": "\"calc\"",
 			"kind": 1,
 			"kindString": "External module",
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "D:/StudentResearch/Mobius/mobius_functions/mobius-array/src/typescript/analyse.ts",
+			"originalName": "D:/StudentResearch/Mobius/mobius_functions/mobius-array/src/typescript/calc.ts",
 			"comment": {
 				"shortText": "Array functions that obtain and return information from an input array. Does not modify input array."
 			},
@@ -101,7 +101,7 @@
 					],
 					"sources": [
 						{
-							"fileName": "analyse.ts",
+							"fileName": "calc.ts",
 							"line": 69,
 							"character": 24
 						}
@@ -201,8 +201,66 @@
 					],
 					"sources": [
 						{
-							"fileName": "analyse.ts",
+							"fileName": "calc.ts",
 							"line": 36,
+							"character": 23
+						}
+					]
+				},
+				{
+					"id": 11,
+					"name": "massAdd",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 12,
+							"name": "massAdd",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "Sums up all the values in an array.",
+								"returns": "Number",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "array = [1,2,3]\nsum = Array.massAdd(array)\n\nExpected value of sum is 6.\n"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 13,
+									"name": "array",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "Array of numbers."
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "intrinsic",
+											"name": "number"
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "calc.ts",
+							"line": 90,
 							"character": 23
 						}
 					]
@@ -214,34 +272,32 @@
 					"kind": 64,
 					"children": [
 						7,
-						2
+						2,
+						11
 					]
 				}
 			],
 			"sources": [
 				{
-					"fileName": "analyse.ts",
+					"fileName": "calc.ts",
 					"line": 1,
 					"character": 0
 				}
 			]
 		},
 		{
-			"id": 11,
-			"name": "\"modify\"",
+			"id": 14,
+			"name": "\"create\"",
 			"kind": 1,
 			"kindString": "External module",
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "D:/StudentResearch/Mobius/mobius_functions/mobius-array/src/typescript/modify.ts",
-			"comment": {
-				"shortText": "Array functions that modify an input array and return a new array."
-			},
+			"originalName": "D:/StudentResearch/Mobius/mobius_functions/mobius-array/src/typescript/create.ts",
 			"children": [
 				{
-					"id": 12,
-					"name": "append",
+					"id": 18,
+					"name": "byConcat",
 					"kind": 64,
 					"kindString": "Function",
 					"flags": {
@@ -249,158 +305,8 @@
 					},
 					"signatures": [
 						{
-							"id": 13,
-							"name": "append",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"comment": {
-								"shortText": "Adds one item to the end of an array and returns a new array.\nIf item is an array, the entire array will be appended as one item.",
-								"returns": "New array with added item.",
-								"tags": [
-									{
-										"tag": "example",
-										"text": "array = [1,2,3]\nappend = Array.append(array,4)\n\nExpected value of array is [1,2,3,4].\n"
-									}
-								]
-							},
-							"parameters": [
-								{
-									"id": 14,
-									"name": "array",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"text": "Array to add to."
-									},
-									"type": {
-										"type": "array",
-										"elementType": {
-											"type": "intrinsic",
-											"name": "any"
-										}
-									}
-								},
-								{
-									"id": 15,
-									"name": "item",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"text": "Item to add."
-									},
-									"type": {
-										"type": "intrinsic",
-										"name": "any"
-									}
-								}
-							],
-							"type": {
-								"type": "array",
-								"elementType": {
-									"type": "intrinsic",
-									"name": "any"
-								}
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "modify.ts",
-							"line": 17,
-							"character": 22
-						}
-					]
-				},
-				{
-					"id": 16,
-					"name": "appendFront",
-					"kind": 64,
-					"kindString": "Function",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 17,
-							"name": "appendFront",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"comment": {
-								"shortText": "Adds one item to the front of an array and returns a new array.\nIf the item is an array, the entire array will be appended as one item.",
-								"returns": "New array with added item.",
-								"tags": [
-									{
-										"tag": "example",
-										"text": "array = [1,2,3]\nappend = Array.appendFront(array,4)\n\nExpected value of array is [4,1,2,3].\n"
-									}
-								]
-							},
-							"parameters": [
-								{
-									"id": 18,
-									"name": "array",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"text": "Array to add to."
-									},
-									"type": {
-										"type": "array",
-										"elementType": {
-											"type": "intrinsic",
-											"name": "any"
-										}
-									}
-								},
-								{
-									"id": 19,
-									"name": "item",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"text": "Item to add."
-									},
-									"type": {
-										"type": "intrinsic",
-										"name": "any"
-									}
-								}
-							],
-							"type": {
-								"type": "array",
-								"elementType": {
-									"type": "intrinsic",
-									"name": "any"
-								}
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "modify.ts",
-							"line": 37,
-							"character": 27
-						}
-					]
-				},
-				{
-					"id": 23,
-					"name": "concat",
-					"kind": 64,
-					"kindString": "Function",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 24,
-							"name": "concat",
+							"id": 19,
+							"name": "byConcat",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
@@ -416,7 +322,7 @@
 							},
 							"parameters": [
 								{
-									"id": 25,
+									"id": 20,
 									"name": "array1",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -433,7 +339,7 @@
 									}
 								},
 								{
-									"id": 26,
+									"id": 21,
 									"name": "array2",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -461,15 +367,15 @@
 					],
 					"sources": [
 						{
-							"fileName": "modify.ts",
-							"line": 72,
-							"character": 22
+							"fileName": "create.ts",
+							"line": 29,
+							"character": 24
 						}
 					]
 				},
 				{
-					"id": 20,
-					"name": "copy",
+					"id": 15,
+					"name": "byCopy",
 					"kind": 64,
 					"kindString": "Function",
 					"flags": {
@@ -477,8 +383,8 @@
 					},
 					"signatures": [
 						{
-							"id": 21,
-							"name": "copy",
+							"id": 16,
+							"name": "byCopy",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
@@ -494,7 +400,7 @@
 							},
 							"parameters": [
 								{
-									"id": 22,
+									"id": 17,
 									"name": "array",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -522,15 +428,15 @@
 					],
 					"sources": [
 						{
-							"fileName": "modify.ts",
-							"line": 55,
-							"character": 20
+							"fileName": "create.ts",
+							"line": 12,
+							"character": 22
 						}
 					]
 				},
 				{
-					"id": 27,
-					"name": "flatten",
+					"id": 22,
+					"name": "byFlatten",
 					"kind": 64,
 					"kindString": "Function",
 					"flags": {
@@ -538,8 +444,8 @@
 					},
 					"signatures": [
 						{
-							"id": 28,
-							"name": "flatten",
+							"id": 23,
+							"name": "byFlatten",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
@@ -555,7 +461,7 @@
 							},
 							"parameters": [
 								{
-									"id": 29,
+									"id": 24,
 									"name": "array",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -583,64 +489,15 @@
 					],
 					"sources": [
 						{
-							"fileName": "modify.ts",
-							"line": 88,
-							"character": 23
+							"fileName": "create.ts",
+							"line": 45,
+							"character": 25
 						}
 					]
 				},
 				{
-					"id": 69,
-					"name": "flattenDeep",
-					"kind": 64,
-					"kindString": "Function",
-					"flags": {},
-					"signatures": [
-						{
-							"id": 70,
-							"name": "flattenDeep",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"comment": {
-								"shortText": "Util functions."
-							},
-							"parameters": [
-								{
-									"id": 71,
-									"name": "array",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "array",
-										"elementType": {
-											"type": "intrinsic",
-											"name": "any"
-										}
-									}
-								}
-							],
-							"type": {
-								"type": "array",
-								"elementType": {
-									"type": "intrinsic",
-									"name": "any"
-								}
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "modify.ts",
-							"line": 300,
-							"character": 20
-						}
-					]
-				},
-				{
-					"id": 65,
-					"name": "range",
+					"id": 30,
+					"name": "byRange",
 					"kind": 64,
 					"kindString": "Function",
 					"flags": {
@@ -648,8 +505,8 @@
 					},
 					"signatures": [
 						{
-							"id": 66,
-							"name": "range",
+							"id": 31,
+							"name": "byRange",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
@@ -665,7 +522,7 @@
 							},
 							"parameters": [
 								{
-									"id": 67,
+									"id": 32,
 									"name": "min",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -679,7 +536,7 @@
 									}
 								},
 								{
-									"id": 68,
+									"id": 33,
 									"name": "max",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -704,344 +561,15 @@
 					],
 					"sources": [
 						{
-							"fileName": "modify.ts",
-							"line": 287,
-							"character": 21
-						}
-					]
-				},
-				{
-					"id": 30,
-					"name": "removeIndex",
-					"kind": 64,
-					"kindString": "Function",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 31,
-							"name": "removeIndex",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"comment": {
-								"shortText": "Removes the item at the specified index from an array and returns a new array.",
-								"returns": "Array with item removed.",
-								"tags": [
-									{
-										"tag": "example",
-										"text": "array = [1,2,3]\nremove = Array.removeIndex(array,1)\n\nExpected value of remove is [1,3].\n"
-									}
-								]
-							},
-							"parameters": [
-								{
-									"id": 32,
-									"name": "array",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"text": "Array to remove item from."
-									},
-									"type": {
-										"type": "array",
-										"elementType": {
-											"type": "intrinsic",
-											"name": "any"
-										}
-									}
-								},
-								{
-									"id": 33,
-									"name": "index",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"text": "Zero-based index number of item to remove."
-									},
-									"type": {
-										"type": "intrinsic",
-										"name": "number"
-									}
-								}
-							],
-							"type": {
-								"type": "array",
-								"elementType": {
-									"type": "intrinsic",
-									"name": "any"
-								}
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "modify.ts",
-							"line": 104,
-							"character": 27
-						}
-					]
-				},
-				{
-					"id": 34,
-					"name": "removeValue",
-					"kind": 64,
-					"kindString": "Function",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 35,
-							"name": "removeValue",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"comment": {
-								"shortText": "Removes items that match specified value from an array and returns a new array.\nItems must match both the value and type of specified value<br/>",
-								"text": "Returns original array if no items in array match specified value.\n",
-								"returns": "Array with item removed",
-								"tags": [
-									{
-										"tag": "example",
-										"text": "array = [1,2,2,3]\nremove = Array.removeValue(array,2,true)\n\nExpected value of remove is [1,3].\n"
-									}
-								]
-							},
-							"parameters": [
-								{
-									"id": 36,
-									"name": "array",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"text": "Array to remove item from."
-									},
-									"type": {
-										"type": "array",
-										"elementType": {
-											"type": "intrinsic",
-											"name": "any"
-										}
-									}
-								},
-								{
-									"id": 37,
-									"name": "value",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"text": "Value to search for."
-									},
-									"type": {
-										"type": "intrinsic",
-										"name": "any"
-									}
-								},
-								{
-									"id": 38,
-									"name": "remove_all",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"text": "Removes all instances of specified value if true, removes only the first instance if\n     false."
-									},
-									"type": {
-										"type": "intrinsic",
-										"name": "boolean"
-									},
-									"defaultValue": "true"
-								}
-							],
-							"type": {
-								"type": "array",
-								"elementType": {
-									"type": "intrinsic",
-									"name": "any"
-								}
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "modify.ts",
-							"line": 128,
-							"character": 27
-						}
-					]
-				},
-				{
-					"id": 39,
-					"name": "replaceValue",
-					"kind": 64,
-					"kindString": "Function",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 40,
-							"name": "replaceValue",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"comment": {
-								"shortText": "Replaces items that match specified value from an array with a new value and returns a new array.\nItems must match both the value and type of specified value<br/>",
-								"text": "Returns original array if no items in array match specified value.\n",
-								"returns": "Array with item(s) replaced.",
-								"tags": [
-									{
-										"tag": "example",
-										"text": "array = [1,2,2,3]\nreplace = Array.replaceValue(array,2,9,true)\n\nExpected value of replace is [1,9,9,3].\n"
-									}
-								]
-							},
-							"parameters": [
-								{
-									"id": 41,
-									"name": "array",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"text": "Array to remove item from."
-									},
-									"type": {
-										"type": "array",
-										"elementType": {
-											"type": "intrinsic",
-											"name": "any"
-										}
-									}
-								},
-								{
-									"id": 42,
-									"name": "value1",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "any"
-									}
-								},
-								{
-									"id": 43,
-									"name": "value2",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"text": "Value to replace existing value with."
-									},
-									"type": {
-										"type": "intrinsic",
-										"name": "any"
-									}
-								},
-								{
-									"id": 44,
-									"name": "replace_all",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"text": "Replaces all instances of specified value if true, replaces only the first instance if\n     false."
-									},
-									"type": {
-										"type": "intrinsic",
-										"name": "boolean"
-									},
-									"defaultValue": "true"
-								}
-							],
-							"type": {
-								"type": "array",
-								"elementType": {
-									"type": "intrinsic",
-									"name": "any"
-								}
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "modify.ts",
-							"line": 158,
-							"character": 28
-						}
-					]
-				},
-				{
-					"id": 45,
-					"name": "reverse",
-					"kind": 64,
-					"kindString": "Function",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 46,
-							"name": "reverse",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"comment": {
-								"shortText": "Reverses the order of items in an array and returns a new array.",
-								"returns": "New reversed array.",
-								"tags": [
-									{
-										"tag": "example",
-										"text": "array = [1,2,3]\nresult = Array.reverse(array)\n\nExpected value of result is [3,2,1].\n"
-									}
-								]
-							},
-							"parameters": [
-								{
-									"id": 47,
-									"name": "array",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"comment": {
-										"text": "Array to reverse."
-									},
-									"type": {
-										"type": "array",
-										"elementType": {
-											"type": "intrinsic",
-											"name": "any"
-										}
-									}
-								}
-							],
-							"type": {
-								"type": "array",
-								"elementType": {
-									"type": "intrinsic",
-									"name": "any"
-								}
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "modify.ts",
-							"line": 182,
+							"fileName": "create.ts",
+							"line": 85,
 							"character": 23
 						}
 					]
 				},
 				{
-					"id": 54,
-					"name": "slice",
+					"id": 25,
+					"name": "bySlice",
 					"kind": 64,
 					"kindString": "Function",
 					"flags": {
@@ -1049,8 +577,8 @@
 					},
 					"signatures": [
 						{
-							"id": 55,
-							"name": "slice",
+							"id": 26,
+							"name": "bySlice",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
@@ -1066,7 +594,7 @@
 							},
 							"parameters": [
 								{
-									"id": 56,
+									"id": 27,
 									"name": "array",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1083,7 +611,7 @@
 									}
 								},
 								{
-									"id": 57,
+									"id": 28,
 									"name": "start",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1097,7 +625,7 @@
 									}
 								},
 								{
-									"id": 58,
+									"id": 29,
 									"name": "end",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1122,14 +650,555 @@
 					],
 					"sources": [
 						{
-							"fileName": "modify.ts",
-							"line": 244,
-							"character": 21
+							"fileName": "create.ts",
+							"line": 66,
+							"character": 23
 						}
 					]
 				},
 				{
-					"id": 48,
+					"id": 34,
+					"name": "flattenDeep",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {},
+					"signatures": [
+						{
+							"id": 35,
+							"name": "flattenDeep",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "Util functions."
+							},
+							"parameters": [
+								{
+									"id": 36,
+									"name": "array",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "intrinsic",
+											"name": "any"
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "any"
+								}
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "create.ts",
+							"line": 98,
+							"character": 20
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						18,
+						15,
+						22,
+						30,
+						25,
+						34
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "create.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 37,
+			"name": "\"modify\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "D:/StudentResearch/Mobius/mobius_functions/mobius-array/src/typescript/modify.ts",
+			"comment": {
+				"shortText": "Array functions that modify an input array and return a new array."
+			},
+			"children": [
+				{
+					"id": 38,
+					"name": "append",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 39,
+							"name": "append",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "Adds one item to the end of an array\nIf item is an array, the entire array will be appended as one item.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "array = [1,2,3]\nappend = Array.append(array,4)\n\nExpected value of array is [1,2,3,4].\n"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 40,
+									"name": "array",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "Array to add to."
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "intrinsic",
+											"name": "any"
+										}
+									}
+								},
+								{
+									"id": 41,
+									"name": "item",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "Item to add."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "modify.ts",
+							"line": 16,
+							"character": 22
+						}
+					]
+				},
+				{
+					"id": 42,
+					"name": "appendFront",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 43,
+							"name": "appendFront",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "Adds one item to the front of an array\nIf the item is an array, the entire array will be appended as one item.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "array = [1,2,3]\nappend = Array.appendFront(array,4)\n\nExpected value of array is [4,1,2,3].\n"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 44,
+									"name": "array",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "Array to add to."
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "intrinsic",
+											"name": "any"
+										}
+									}
+								},
+								{
+									"id": 45,
+									"name": "item",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "Item to add."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "modify.ts",
+							"line": 36,
+							"character": 27
+						}
+					]
+				},
+				{
+					"id": 46,
+					"name": "removeIndex",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 47,
+							"name": "removeIndex",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "Removes the item at the specified index from an array",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "array = [1,2,3]\nremove = Array.removeIndex(array,1)\n\nExpected value of remove is [1,3].\n"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 48,
+									"name": "array",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "Array to remove item from."
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "intrinsic",
+											"name": "any"
+										}
+									}
+								},
+								{
+									"id": 49,
+									"name": "index",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "Zero-based index number of item to remove."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "modify.ts",
+							"line": 103,
+							"character": 27
+						}
+					]
+				},
+				{
+					"id": 50,
+					"name": "removeValue",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 51,
+							"name": "removeValue",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "Removes items that match specified value from an array\nItems must match both the value and type of specified value<br/>",
+								"text": "Returns original array if no items in array match specified value.\n",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "array = [1,2,2,3]\nremove = Array.removeValue(array,2,true)\n\nExpected value of remove is [1,3].\n"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 52,
+									"name": "array",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "Array to remove item from."
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "intrinsic",
+											"name": "any"
+										}
+									}
+								},
+								{
+									"id": 53,
+									"name": "value",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "Value to search for."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								},
+								{
+									"id": 54,
+									"name": "remove_all",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "Removes all instances of specified value if true, removes only the first instance if\n     false."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									},
+									"defaultValue": "true"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "modify.ts",
+							"line": 127,
+							"character": 27
+						}
+					]
+				},
+				{
+					"id": 55,
+					"name": "replaceValue",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 56,
+							"name": "replaceValue",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "Replaces items that match specified value from an array with a new value\nItems must match both the value and type of specified value<br/>",
+								"text": "Returns original array if no items in array match specified value.\n",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "array = [1,2,2,3]\nreplace = Array.replaceValue(array,2,9,true)\n\nExpected value of replace is [1,9,9,3].\n"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 57,
+									"name": "array",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "Array to remove item from."
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "intrinsic",
+											"name": "any"
+										}
+									}
+								},
+								{
+									"id": 58,
+									"name": "value1",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								},
+								{
+									"id": 59,
+									"name": "value2",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "Value to replace existing value with."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								},
+								{
+									"id": 60,
+									"name": "replace_all",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "Replaces all instances of specified value if true, replaces only the first instance if\n     false."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									},
+									"defaultValue": "true"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "modify.ts",
+							"line": 162,
+							"character": 28
+						}
+					]
+				},
+				{
+					"id": 61,
+					"name": "reverse",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 62,
+							"name": "reverse",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "Reverses the order of items in an array and returns a new array.",
+								"returns": "New reversed array.",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "array = [1,2,3]\nresult = Array.reverse(array)\n\nExpected value of result is [3,2,1].\n"
+									}
+								]
+							},
+							"parameters": [
+								{
+									"id": 63,
+									"name": "array",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {
+										"text": "Array to reverse."
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "intrinsic",
+											"name": "any"
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "modify.ts",
+							"line": 192,
+							"character": 23
+						}
+					]
+				},
+				{
+					"id": 64,
 					"name": "sortAlpha",
 					"kind": 64,
 					"kindString": "Function",
@@ -1138,15 +1207,14 @@
 					},
 					"signatures": [
 						{
-							"id": 49,
+							"id": 65,
 							"name": "sortAlpha",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"comment": {
-								"shortText": "Sorts an array of strings alphabetically and returns a new array.\nIf items are not strings, they are treated as strings.<br/>",
+								"shortText": "Sorts an array of strings alphabetically\nIf items are not strings, they are treated as strings.<br/>",
 								"text": "Items are sorted according to string Unicode code points (character by character, numbers before upper case\nalphabets, upper case alphabets before lower case alphabets)\n",
-								"returns": "New sorted array.",
 								"tags": [
 									{
 										"tag": "example",
@@ -1156,7 +1224,7 @@
 							},
 							"parameters": [
 								{
-									"id": 50,
+									"id": 66,
 									"name": "array",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1174,24 +1242,21 @@
 								}
 							],
 							"type": {
-								"type": "array",
-								"elementType": {
-									"type": "intrinsic",
-									"name": "any"
-								}
+								"type": "intrinsic",
+								"name": "void"
 							}
 						}
 					],
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 203,
+							"line": 213,
 							"character": 25
 						}
 					]
 				},
 				{
-					"id": 51,
+					"id": 67,
 					"name": "sortNum",
 					"kind": 64,
 					"kindString": "Function",
@@ -1200,14 +1265,13 @@
 					},
 					"signatures": [
 						{
-							"id": 52,
+							"id": 68,
 							"name": "sortNum",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"comment": {
-								"shortText": "Sorts an array of numbers in ascending order and returns a new array.\nThe array must contain numbers.",
-								"returns": "New sorted array.",
+								"shortText": "Sorts an array of numbers in ascending order\nThe array must contain numbers.",
 								"tags": [
 									{
 										"tag": "example",
@@ -1217,7 +1281,7 @@
 							},
 							"parameters": [
 								{
-									"id": 53,
+									"id": 69,
 									"name": "array",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1235,24 +1299,21 @@
 								}
 							],
 							"type": {
-								"type": "array",
-								"elementType": {
-									"type": "intrinsic",
-									"name": "any"
-								}
+								"type": "intrinsic",
+								"name": "void"
 							}
 						}
 					],
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 221,
+							"line": 231,
 							"character": 23
 						}
 					]
 				},
 				{
-					"id": 59,
+					"id": 70,
 					"name": "splice",
 					"kind": 64,
 					"kindString": "Function",
@@ -1261,15 +1322,14 @@
 					},
 					"signatures": [
 						{
-							"id": 60,
+							"id": 71,
 							"name": "splice",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"comment": {
-								"shortText": "Adds and/or removes items to/from an array and returns a new array.",
+								"shortText": "Adds and/or removes items to/from an array",
 								"text": "If no items_to_add are specified, then items are only removed.\nIf num_to_remove is 0, then items are only added.<br/>\n",
-								"returns": "A new array.",
 								"tags": [
 									{
 										"tag": "example",
@@ -1279,7 +1339,7 @@
 							},
 							"parameters": [
 								{
-									"id": 61,
+									"id": 72,
 									"name": "array",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1296,7 +1356,7 @@
 									}
 								},
 								{
-									"id": 62,
+									"id": 73,
 									"name": "index",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1310,7 +1370,7 @@
 									}
 								},
 								{
-									"id": 63,
+									"id": 74,
 									"name": "num_to_remove",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1324,7 +1384,7 @@
 									}
 								},
 								{
-									"id": 64,
+									"id": 75,
 									"name": "items_to_add",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1342,18 +1402,15 @@
 								}
 							],
 							"type": {
-								"type": "array",
-								"elementType": {
-									"type": "intrinsic",
-									"name": "any"
-								}
+								"type": "intrinsic",
+								"name": "void"
 							}
 						}
 					],
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 268,
+							"line": 278,
 							"character": 22
 						}
 					]
@@ -1364,21 +1421,15 @@
 					"title": "Functions",
 					"kind": 64,
 					"children": [
-						12,
-						16,
-						23,
-						20,
-						27,
-						69,
-						65,
-						30,
-						34,
-						39,
-						45,
-						54,
-						48,
-						51,
-						59
+						38,
+						42,
+						46,
+						50,
+						55,
+						61,
+						64,
+						67,
+						70
 					]
 				}
 			],
@@ -1396,9 +1447,10 @@
 			"title": "External modules",
 			"kind": 1,
 			"children": [
-				72,
+				76,
 				1,
-				11
+				14,
+				37
 			]
 		}
 	]
