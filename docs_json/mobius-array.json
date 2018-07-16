@@ -12,7 +12,7 @@
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "D:/StudentResearch/Mobius/mobius_functions/mobius-array/src/typescript/_export.ts",
+			"originalName": "D:/Dropbox/Files/Software/GitHub/design-automation/mobius-array/src/typescript/_export.ts",
 			"sources": [
 				{
 					"fileName": "_export.ts",
@@ -29,7 +29,7 @@
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "D:/StudentResearch/Mobius/mobius_functions/mobius-array/src/typescript/calc.ts",
+			"originalName": "D:/Dropbox/Files/Software/GitHub/design-automation/mobius-array/src/typescript/calc.ts",
 			"comment": {
 				"shortText": "Array functions that obtain and return information from an input array. Does not modify input array."
 			},
@@ -293,7 +293,7 @@
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "D:/StudentResearch/Mobius/mobius_functions/mobius-array/src/typescript/create.ts",
+			"originalName": "D:/Dropbox/Files/Software/GitHub/design-automation/mobius-array/src/typescript/create.ts",
 			"children": [
 				{
 					"id": 18,
@@ -736,7 +736,7 @@
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "D:/StudentResearch/Mobius/mobius_functions/mobius-array/src/typescript/modify.ts",
+			"originalName": "D:/Dropbox/Files/Software/GitHub/design-automation/mobius-array/src/typescript/modify.ts",
 			"comment": {
 				"shortText": "Array functions that modify an input array and return a new array."
 			},
