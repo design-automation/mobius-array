@@ -10,7 +10,7 @@
  * @param item Item to add.
  * @example array = [1,2,3]
  * append = Array.append(array,4)
- * 
+ *
  * Expected value of array is [1,2,3,4].
  */
 export function append(array: any[], item: any): /*any[]*/void {
@@ -20,7 +20,7 @@ export function append(array: any[], item: any): /*any[]*/void {
     // array2.push(item);
     // return array2;
     array.push(item);
-    return void;
+    return;
 }
 
 /**
@@ -41,7 +41,7 @@ export function appendFront(array: any[], item: any): /*any[]*/void {
     // array2.unshift(item);
     // return array2;
     array.unshift(item);
-    return void;
+    return;
 }
 
 // /**
@@ -109,7 +109,7 @@ export function removeIndex(array: any[], index: number): /*any[]*/void {
     // array2.splice(index,1);
     // return array2;
     array.splice(index,1);
-    return void;
+    return;
 }
 
 /**
@@ -144,7 +144,7 @@ export function removeValue(array: any[], value: any, remove_all: boolean = true
             if (remove_all === false) {break;}
         }
     }
-    return void;
+    return;
 }
 
 /**
@@ -181,7 +181,7 @@ export function replaceValue(array: any[], value1: any, value2: any, replace_all
             if (replace_all === false) {break;}
         }
     }
-    return void;
+    return;
 }
 
 /**
@@ -200,7 +200,7 @@ export function reverse(array: any[]): /*any[]*/void {
     // array2.reverse();
     // return array2;
     array.reverse();
-    return void;
+    return;
 }
 
 /**
@@ -222,7 +222,7 @@ export function sortAlpha(array: any[]): /*any[]*/void {
     // array2.sort();
     // return array2;
     array.sort();
-    return void;
+    return;
 }
 
 /**
@@ -241,7 +241,7 @@ export function sortNum(array: any[]): /*any[]*/void {
     // array2.sort((a, b) => a - b);
     // return array2;
     array.sort((a, b) => a - b);
-    return void;
+    return;
 }
 
 // *
@@ -259,7 +259,7 @@ export function sortNum(array: any[]): /*any[]*/void {
 //  * result = Array.slice(array,1,3)
 //  *
 //  * Expected value of result is [2,3].
- 
+
 // export function slice(array: any[], start: number, end: number): any[] {
 //     if (array === undefined) {throw new Error("Invalid arg: array must be defined.");}
 //     if (start === undefined) {throw new Error("Invalid arg: start must be defined.");}
@@ -290,7 +290,7 @@ export function splice(array: any[], index: number, num_to_remove: number, items
     // array2.splice(index, num_to_remove, ...items_to_add);
     // return array2;
     array.splice(index, num_to_remove, ...items_to_add);
-    return void;
+    return;
 }
 
 // /**
