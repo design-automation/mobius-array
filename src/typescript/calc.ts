@@ -89,9 +89,5 @@ export function includes(array: any[], value: any): boolean {
  */
 export function massAdd(array: number[]): number {
     if (array === undefined) {throw new Error("Invalid arg: array must be defined.");}
-    let sum: number = 0;
-    for (let i = array.length - 1; i >= 0; i--) {
-        sum += array[i];
-    }
-    return sum;
+    return array.reduce(function(total,next) {return total + next;});
 }

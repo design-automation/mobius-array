@@ -20,6 +20,7 @@ export function append(array: any[], item: any): /*any[]*/void {
     // array2.push(item);
     // return array2;
     array.push(item);
+    return void;
 }
 
 /**
@@ -40,6 +41,7 @@ export function appendFront(array: any[], item: any): /*any[]*/void {
     // array2.unshift(item);
     // return array2;
     array.unshift(item);
+    return void;
 }
 
 // /**
@@ -107,6 +109,7 @@ export function removeIndex(array: any[], index: number): /*any[]*/void {
     // array2.splice(index,1);
     // return array2;
     array.splice(index,1);
+    return void;
 }
 
 /**
@@ -141,6 +144,7 @@ export function removeValue(array: any[], value: any, remove_all: boolean = true
             if (remove_all === false) {break;}
         }
     }
+    return void;
 }
 
 /**
@@ -177,6 +181,7 @@ export function replaceValue(array: any[], value1: any, value2: any, replace_all
             if (replace_all === false) {break;}
         }
     }
+    return void;
 }
 
 /**
@@ -195,6 +200,7 @@ export function reverse(array: any[]): /*any[]*/void {
     // array2.reverse();
     // return array2;
     array.reverse();
+    return void;
 }
 
 /**
@@ -216,6 +222,7 @@ export function sortAlpha(array: any[]): /*any[]*/void {
     // array2.sort();
     // return array2;
     array.sort();
+    return void;
 }
 
 /**
@@ -234,6 +241,7 @@ export function sortNum(array: any[]): /*any[]*/void {
     // array2.sort((a, b) => a - b);
     // return array2;
     array.sort((a, b) => a - b);
+    return void;
 }
 
 // *
@@ -282,6 +290,7 @@ export function splice(array: any[], index: number, num_to_remove: number, items
     // array2.splice(index, num_to_remove, ...items_to_add);
     // return array2;
     array.splice(index, num_to_remove, ...items_to_add);
+    return void;
 }
 
 // /**
