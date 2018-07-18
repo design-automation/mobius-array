@@ -23,7 +23,7 @@
  *
  * Returns -1 if no items in array match specified value.
  *
- * @param array Array.
+ * @param arr Array.
  * @param value Value to search for.
  * @param search_all Returns index position for all instances of specified value if true, returns only the first
  *      instance if false.
@@ -33,12 +33,12 @@
  *
  * Expected value of positions is [1,2].
  */
-export function indexOf(array: any[], value: any, search_all: boolean = true): number|number[] {
-    if (array === undefined) {throw new Error("Invalid arg: array must be defined.");}
+export function indexOf(arr: any[], value: any, search_all: boolean = true): number|number[] {
+    if (arr === undefined) {throw new Error("Invalid arg: arr must be defined.");}
     if (value === undefined) {throw new Error("Invalid arg: value must be defined.");}
     const positions = [];
-    for (let i = 0 ; i < array.length; i++) {
-        if (array[i] === value) {
+    for (let i = 0 ; i < arr.length; i++) {
+        if (arr[i] === value) {
             positions.push(i);
             if (search_all === false) {
                 return i;
@@ -58,19 +58,19 @@ export function indexOf(array: any[], value: any, search_all: boolean = true): n
  *
  * Returns false if no items in array match specified value.
  *
- * @param array Array.
+ * @param arr Array.
  * @param value Value to search for.
- * @returns Returns true if value can be foung in array, false if value cannot be found.
- * @example array = [6,2,2,7]
- * exists = Array.includes(array,2)
+ * @returns Returns true if value can be found in array, false if value cannot be found.
+ * @example arr = [6,2,2,7]
+ * exists = Array.includes(arr,2)
  *
  * Expected value of exists is true.
  */
-export function includes(array: any[], value: any): boolean {
-    if (array === undefined) {throw new Error("Invalid arg: array must be defined.");}
+export function includes(arr: any[], value: any): boolean {
+    if (arr === undefined) {throw new Error("Invalid arg: arr must be defined.");}
     if (value === undefined) {throw new Error("Invalid arg: value must be defined.");}
-    for (let i = array.length - 1; i >= 0; i--) {
-        if (array[i] === value) {
+    for (let i = arr.length - 1; i >= 0; i--) {
+        if (arr[i] === value) {
             return true;
         }
     }
@@ -80,14 +80,14 @@ export function includes(array: any[], value: any): boolean {
 /**
  * Sums up all the values in an array.
  *
- * @param array Array of numbers.
+ * @param arr Array of numbers.
  * @returns Number
- * @example array = [1,2,3]
- * sum = Array.massAdd(array)
+ * @example arr = [1,2,3]
+ * sum = Array.massAdd(arr)
  *
  * Expected value of sum is 6.
  */
-export function massAdd(array: number[]): number {
-    if (array === undefined) {throw new Error("Invalid arg: array must be defined.");}
-    return array.reduce(function(total,next) {return total + next;});
+export function massAdd(arr: number[]): number {
+    if (arr === undefined) {throw new Error("Invalid arg: arr must be defined.");}
+    return arr.reduce((total,next) => total + next);
 }
