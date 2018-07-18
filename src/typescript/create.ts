@@ -85,7 +85,7 @@ export function bySlice(array: any[], start: number, end: number): any[] {
 export function byRange(min: number, max: number): number[] {
     if (min === undefined) {throw new Error("Invalid arg: min must be defined.");}
     if (max === undefined) {throw new Error("Invalid arg: max must be defined.");}
-    const len:number = max - min;
+    const len: number = max - min;
     if (len <= 0) {return [];}
     return Array.apply(0, new Array(len)).map((v, i) => i + min);
 }
