@@ -52,18 +52,18 @@
 							"comment": {
 								"shortText": "Searches for a value in an array and returns true if found.\nItems must match both the value and type of specified value<br/>",
 								"text": "Returns false if no items in array match specified value.\n",
-								"returns": "Returns true if value can be foung in array, false if value cannot be found.",
+								"returns": "Returns true if value can be found in array, false if value cannot be found.",
 								"tags": [
 									{
 										"tag": "example",
-										"text": "array = [6,2,2,7]\nexists = Array.includes(array,2)\n\nExpected value of exists is true.\n"
+										"text": "arr = [6,2,2,7]\nexists = Array.includes(arr,2)\n\nExpected value of exists is true.\n"
 									}
 								]
 							},
 							"parameters": [
 								{
 									"id": 9,
-									"name": "array",
+									"name": "arr",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
@@ -136,7 +136,7 @@
 							"parameters": [
 								{
 									"id": 4,
-									"name": "array",
+									"name": "arr",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
@@ -228,14 +228,14 @@
 								"tags": [
 									{
 										"tag": "example",
-										"text": "array = [1,2,3]\nsum = Array.massAdd(array)\n\nExpected value of sum is 6.\n"
+										"text": "arr = [1,2,3]\nsum = Array.massAdd(arr)\n\nExpected value of sum is 6.\n"
 									}
 								]
 							},
 							"parameters": [
 								{
 									"id": 13,
-									"name": "array",
+									"name": "arr",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
@@ -316,14 +316,14 @@
 								"tags": [
 									{
 										"tag": "example",
-										"text": "array1 = [1,2,3]\narray2 = [9,0]\nnewarr = Array.concat(array1,array2)\n\nExpected value of newarr is [1,2,3,9,0].\n"
+										"text": "arr1 = [1,2,3]\narr2 = [9,0]\nnewarr = Array.concat(arr1,arr2)\n\nExpected value of newarr is [1,2,3,9,0].\n"
 									}
 								]
 							},
 							"parameters": [
 								{
 									"id": 20,
-									"name": "array1",
+									"name": "arr1",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
@@ -340,7 +340,7 @@
 								},
 								{
 									"id": 21,
-									"name": "array2",
+									"name": "arr2",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
@@ -394,14 +394,14 @@
 								"tags": [
 									{
 										"tag": "example",
-										"text": "array = [1,2,3]\ncopy = Array.Copy(array)\n\nExpected value of copy is [1,2,3].\n"
+										"text": "arr = [1,2,3]\ncopy = Array.Copy(arr)\n\nExpected value of copy is [1,2,3].\n"
 									}
 								]
 							},
 							"parameters": [
 								{
 									"id": 17,
-									"name": "array",
+									"name": "arr",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
@@ -455,14 +455,14 @@
 								"tags": [
 									{
 										"tag": "example",
-										"text": "array = [1,2,3,[4,5]]\nflatten = Array.flatten(array)</code>\n\nExpected value of array is [1,2,3,4,5].\n"
+										"text": "arr = [1,2,3,[4,5]]\nflatten = Array.flatten(arr)</code>\n\nExpected value of flatten is [1,2,3,4,5].\n"
 									}
 								]
 							},
 							"parameters": [
 								{
 									"id": 24,
-									"name": "array",
+									"name": "arr",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
@@ -562,7 +562,7 @@
 					"sources": [
 						{
 							"fileName": "create.ts",
-							"line": 85,
+							"line": 84,
 							"character": 23
 						}
 					]
@@ -584,18 +584,18 @@
 							"flags": {},
 							"comment": {
 								"shortText": "Creates a copy of a portion of an array, from start index to end index (end not included).",
-								"returns": "A new array.",
+								"returns": "A new arr.",
 								"tags": [
 									{
 										"tag": "example",
-										"text": "array = [1,2,3,4,5]\nresult = Array.slice(array,1,3)\n\nExpected value of result is [2,3].\n"
+										"text": "arr = [1,2,3,4,5]\nresult = Array.slice(arr,1,3)\n\nExpected value of result is [2,3].\n"
 									}
 								]
 							},
 							"parameters": [
 								{
 									"id": 27,
-									"name": "array",
+									"name": "arr",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
@@ -675,7 +675,7 @@
 							"parameters": [
 								{
 									"id": 36,
-									"name": "array",
+									"name": "arr",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
@@ -700,7 +700,7 @@
 					"sources": [
 						{
 							"fileName": "create.ts",
-							"line": 98,
+							"line": 97,
 							"character": 20
 						}
 					]
@@ -761,14 +761,14 @@
 								"tags": [
 									{
 										"tag": "example",
-										"text": "array = [1,2,3]\nappend = Array.append(array,4)\n\nExpected value of array is [1,2,3,4].\n"
+										"text": "arr = [1,2,3]\nappend = Array.append(arr,4)\n\nExpected value of arr is [1,2,3,4].\n"
 									}
 								]
 							},
 							"parameters": [
 								{
 									"id": 40,
-									"name": "array",
+									"name": "arr",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
@@ -832,14 +832,14 @@
 								"tags": [
 									{
 										"tag": "example",
-										"text": "array = [1,2,3]\nappend = Array.appendFront(array,4)\n\nExpected value of array is [4,1,2,3].\n"
+										"text": "arr = [1,2,3]\nappend = Array.appendFront(arr,4)\n\nExpected value of arr is [4,1,2,3].\n"
 									}
 								]
 							},
 							"parameters": [
 								{
 									"id": 44,
-									"name": "array",
+									"name": "arr",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
@@ -878,7 +878,7 @@
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 37,
+							"line": 34,
 							"character": 27
 						}
 					]
@@ -903,14 +903,14 @@
 								"tags": [
 									{
 										"tag": "example",
-										"text": "array = [1,2,3]\nremove = Array.removeIndex(array,1)\n\nExpected value of remove is [1,3].\n"
+										"text": "arr = [1,2,3]\nremove = Array.removeIndex(arr,1)\n\nExpected value of remove is [1,3].\n"
 									}
 								]
 							},
 							"parameters": [
 								{
 									"id": 48,
-									"name": "array",
+									"name": "arr",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
@@ -949,7 +949,7 @@
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 105,
+							"line": 51,
 							"character": 27
 						}
 					]
@@ -975,14 +975,14 @@
 								"tags": [
 									{
 										"tag": "example",
-										"text": "array = [1,2,2,3]\nremove = Array.removeValue(array,2,true)\n\nExpected value of remove is [1,3].\n"
+										"text": "arr = [1,2,2,3]\nremove = Array.removeValue(arr,2,true)\n\nExpected value of remove is [1,3].\n"
 									}
 								]
 							},
 							"parameters": [
 								{
 									"id": 52,
-									"name": "array",
+									"name": "arr",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
@@ -1036,7 +1036,7 @@
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 130,
+							"line": 73,
 							"character": 27
 						}
 					]
@@ -1062,14 +1062,14 @@
 								"tags": [
 									{
 										"tag": "example",
-										"text": "array = [1,2,2,3]\nreplace = Array.replaceValue(array,2,9,true)\n\nExpected value of replace is [1,9,9,3].\n"
+										"text": "arr = [1,2,2,3]\nreplace = Array.replaceValue(arr,2,9,true)\n\nExpected value of replace is [1,9,9,3].\n"
 									}
 								]
 							},
 							"parameters": [
 								{
 									"id": 57,
-									"name": "array",
+									"name": "arr",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
@@ -1134,7 +1134,7 @@
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 166,
+							"line": 101,
 							"character": 28
 						}
 					]
@@ -1160,14 +1160,14 @@
 								"tags": [
 									{
 										"tag": "example",
-										"text": "array = [1,2,3]\nresult = Array.reverse(array)\n\nExpected value of result is [3,2,1].\n"
+										"text": "arr = [1,2,3]\nresult = Array.reverse(arr)\n\nExpected value of result is [3,2,1].\n"
 									}
 								]
 							},
 							"parameters": [
 								{
 									"id": 63,
-									"name": "array",
+									"name": "arr",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
@@ -1192,7 +1192,7 @@
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 197,
+							"line": 124,
 							"character": 23
 						}
 					]
@@ -1225,7 +1225,7 @@
 							"parameters": [
 								{
 									"id": 66,
-									"name": "array",
+									"name": "arr",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
@@ -1250,7 +1250,7 @@
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 219,
+							"line": 143,
 							"character": 25
 						}
 					]
@@ -1275,14 +1275,14 @@
 								"tags": [
 									{
 										"tag": "example",
-										"text": "array = [56,6,48]\nsort = Array.sortNum(array)\n\nExpected value of array is [6,48,56].\n"
+										"text": "arr = [56,6,48]\nsort = Array.sortNum(arr)\n\nExpected value of arr is [6,48,56].\n"
 									}
 								]
 							},
 							"parameters": [
 								{
 									"id": 69,
-									"name": "array",
+									"name": "arr",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
@@ -1307,7 +1307,7 @@
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 238,
+							"line": 159,
 							"character": 23
 						}
 					]
@@ -1333,14 +1333,14 @@
 								"tags": [
 									{
 										"tag": "example",
-										"text": "array = [10, 20, 30, 40, 50]\nresult = Array.splice(array, 1, 3, [2.2, 3.3])\n\nExpected value of result is [10, 2.2, 3.2, 50].\n"
+										"text": "arr = [10, 20, 30, 40, 50]\nresult = Array.splice(arr, 1, 3, [2.2, 3.3])\n\nExpected value of result is [10, 2.2, 3.2, 50].\n"
 									}
 								]
 							},
 							"parameters": [
 								{
 									"id": 72,
-									"name": "array",
+									"name": "arr",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
@@ -1410,7 +1410,7 @@
 					"sources": [
 						{
 							"fileName": "modify.ts",
-							"line": 286,
+							"line": 180,
 							"character": 22
 						}
 					]
